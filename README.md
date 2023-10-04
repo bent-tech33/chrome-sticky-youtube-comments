@@ -1,7 +1,12 @@
 # chrome-sticky-youtube-comments
 Stick youtube comments so you can read them while watching videos.
 
-Just zip the contents and install as an unpacked extension in Chrome.
+How to use:
+- Visit chrome://extensions/ in chrome
+- Click Load unpacked
+- Point to this folder and select it.
+- Done.
+
 You can make the comments always sticky from the extensions's settings dialog box.
 
 Known Bug:
