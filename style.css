@@ -1,0 +1,66 @@
+body.tfu-sticky-comments #tfu-comments-holder{
+position: fixed!important;
+    z-index: 10000!important;
+    top: 55px!important;
+    background: black!important;
+    width: 25%!important;
+    overflow-y: auto!important;
+    height: calc(100vh - 55px)!important;
+    left: 0!important;
+padding: 10px!important;
+box-sizing: border-box;
+overflow-x: hidden;
+}
+/** fix controls width in fullscreen mode **/
+
+body.tfu-sticky-comments .ytp-fullscreen .ytp-progress-bar-container{
+	scale: 0.70!important;
+    margin-left: -13%!important;
+}
+
+/** show comments up to 50 lines **/
+body.tfu-sticky-comments #tfu-comments-holder ytd-expander{
+	--ytd-expander-max-lines: 50!important;
+
+}
+
+body.tfu-sticky-comments .html5-video-player .video-stream{
+	left: 0!important;
+    right: 0!important;
+    margin-left: auto!important;
+    margin-right: auto!important;
+	object-fit: contain!important;
+}
+body.tfu-sticky-comments ytd-watch-flexy[flexy]{
+padding-left: calc(25% + 20px)!important;
+}
+
+
+#tfu-comments-message{
+	display: flex;
+    padding-top: 20px;
+}
+#tfu-sticky-unsticky-comments{
+	color: white;
+    font-size: 1.4em;
+	padding: 10px 5px;
+    background-color: #cc0000;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+	box-shadow: 1px 1px 7px 2px #cc0000;
+}
+
+#tfu-sticky-unsticky-comments.tfu-active{
+	box-shadow: none;
+}
+body.tfu-sticky-comments #tfu-comments-message{
+justify-content: end;
+    padding: 0;
+    position: absolute;
+    right: 14px;
+    top: 24px;
+}
+    
+
