@@ -8,6 +8,3 @@ How to use:
 - Done.
 
 You can make the comments always sticky from the extensions's settings dialog box.
-
-Known Bug:
-- when using full screen, videos chapters are misaligned.
