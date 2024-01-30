@@ -1,7 +1,7 @@
 {
   "name": "Sticky youtube comments",
   "description": "Stick youtube comments so you can read them while watching videos.",
-  "version": "1.5",
+  "version": "1.7",
   "manifest_version": 3,
   "permissions": ["storage"],
   "action": {"default_popup": "popup.html","default_icon": "icon.png"},
