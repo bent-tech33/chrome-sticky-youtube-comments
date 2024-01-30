@@ -1,6 +1,6 @@
 body.tfu-sticky-comments #tfu-comments-holder{
 position: fixed!important;
-    z-index: 10000!important;
+    z-index: 2000!important;/*2202 is used by some youtube elements **/
     top: 55px!important;
     background: black!important;
     width: 25%!important;
@@ -11,29 +11,7 @@ padding: 10px!important;
 box-sizing: border-box;
 overflow-x: hidden;
 }
-/** fix controls width in fullscreen mode **/
 
-body.tfu-sticky-comments .ytp-fullscreen .ytp-progress-bar-container{
-	scale: 0.70!important;
-    margin-left: -13%!important;
-}
-
-/** show comments up to 50 lines **/
-body.tfu-sticky-comments #tfu-comments-holder ytd-expander{
-	--ytd-expander-max-lines: 50!important;
-
-}
-
-body.tfu-sticky-comments .html5-video-player .video-stream{
-	left: 0!important;
-    right: 0!important;
-    margin-left: auto!important;
-    margin-right: auto!important;
-	object-fit: contain!important;
-}
-body.tfu-sticky-comments ytd-watch-flexy[flexy]{
-padding-left: calc(25% + 20px)!important;
-}
 
 
 #tfu-comments-message{
@@ -59,8 +37,60 @@ body.tfu-sticky-comments #tfu-comments-message{
 justify-content: end;
     padding: 0;
     position: absolute;
-    right: 14px;
-    top: 24px;
+    top: 75px;
+	left: 17%;
+    width: 89px;
+	position: fixed;
+	z-index: 1;
 }
     
+
+
+
+/** show comments up to 50 lines **/
+body.tfu-sticky-comments #tfu-comments-holder ytd-expander{
+	--ytd-expander-max-lines: 50!important;
+
+}
+
+body.tfu-sticky-comments .html5-video-player .video-stream{
+	left: 0!important;
+    right: 0!important;
+    margin-left: auto!important;
+    margin-right: auto!important;
+	object-fit: contain!important;
+}
+body.tfu-sticky-comments ytd-watch-flexy[flexy]{
+padding-left: calc(25% + 20px)!important;
+}
+
+/** fix controls width in fullscreen mode **/
+body.tfu-sticky-comments.no-scroll #tfu-comments-message{
+	top : 24px!important;
+}
+
+
+body.tfu-sticky-comments .ytp-fullscreen{
+	z-index: 3000!important;
+}
+body.tfu-sticky-comments .ytp-fullscreen .ytp-chrome-bottom{
+	position: fixed!important;
+}
+body.tfu-sticky-comments .ytp-fullscreen .ytp-preview{
+		position: fixed;
+
+}
+/** no scroll class added on full screen **/
+
+body.tfu-sticky-comments.no-scroll #tfu-comments-holder{
+	height: calc(100vh - 90px) !important;
+	top: 0!important;
+}
+
+
+
+body.tfu-sticky-comments .ytp-fullscreen .video-stream, body.tfu-sticky-comments .ytp-fullscreen .ytp-chapter-hover-container:not(.ytp-exp-chapter-hover-container){
+		width: 100%!important;
+
+}
 
